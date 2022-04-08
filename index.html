@@ -8,35 +8,27 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <div class="main" style="margin:auto; width:100%; align-content: center;" >
-       <input type="checkbox" name="" id="" class="app" value="apple">Apple
-       <input type="checkbox" name="" id="" class="app" value="orange">Orange
-       <input type="checkbox" name="" id="" class="app" value="guava">Guava  
-       <p id="output"></p>
+    <div class="test">Hi I am class test</div>
+    <div class="funny">I am Funny Class</div>
+    <div class="demo">Hi I am Demo Class</div>
 
+    <button>Click to check</button>
+    
 
-
-
-        
-    </div>
+   
    <script>
+       $(document).ready(function(){
+           $("button").click(function(){
+               $(".test").remove();
+               $(".demo").remove();
+           })
+       })
 
        
-        //   
+     
 
             
-      $(document).ready(function(){
-          var check=function(){  var x=$("input:checked").length;
-          $("#output").text( x + (x === 1 ? " is" : " are") + " checked!")
-        }; 
-        check();
-        $("input[type=checkbox]").click(check)
-        
-
-
-         
-
-          })
+     
    
          
            
