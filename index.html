@@ -7,28 +7,25 @@
     <title>Document</title>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
   </head>
+  <style>
+      .important{
+          background-color: green;
+          font-size: 50px;
+      }
+  </style>
   <body>
-    <!-- <div class="test">Hi I am class test</div>
-    <div class="funny">I am Funny Class</div>
-    <div class="demo">Hi I am Demo Class</div> -->
-    <p id="p1">Hi I am paragraph</p>
+      <div class="main">
+          <p>Hi I am a paragraph</p>
+          <button>Click</button>
 
-    <button>Click</button>
-
-    <script>
-      $(document).ready(function () {
-        $("button").click(function () {
-          $("#p1").css({
-            'background-color': 'green',
-            'color': 'white',
-            'font-size': '25px',
-            'padding': '15px'
+      </div>
+      
+      <script>
+        $(document).ready(function () {
+          $("button").click(function () {
+            $("div").toggleClass("important");
           });
-
-          //    $(".test").remove();
-          //    $(".demo").remove();
         });
-      });
-    </script>
+      </script>
   </body>
 </html>
