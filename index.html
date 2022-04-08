@@ -14,23 +14,23 @@
            
         </select> -->
         <!-- <input type="text" id="ipbox"> <br> <br> -->
-         <table border="2px">
-             <tr class="tablerow">
+         <table border="2px" class="tab">
+             <tr >
                  <th>Name</th>
                  <th>Number</th>
                  <th>City</th>
              </tr>
-             <tr class="tablerow">
+             <tr >
                  <td>Rohan</td>
                  <td>99XXXXXX</td>
                  <td>Delhi</td>
              </tr>
-             <tr class="tablerow">
+             <tr >
                  <td>Sagar</td>
                  <td>90XXXXXX</td>
                  <TD>Mumbai</TD>
              </tr>
-             <tr class="tablerow">
+             <tr >
                  <td>Rishabh</td>
                  <td>98XXXXXX</td>
                  <td>Chennai</td>
@@ -49,7 +49,7 @@
             //    var opt=$("<option />")
             //    opt.html($("#ipbox").val());
             //    $("#dropdown").append(opt);
-            $(".tablerow").remove()
+            $(".tab").find("tr:gt(0)").remove();
 
 
               
