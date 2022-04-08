@@ -18,19 +18,26 @@
         <div style="border: 2px solid black; margin-top: 1px;height: 40px" ></div>
         <div style="border: 2px solid black; margin-top: 1px;height: 40px" ></div>
         <br>
-        <button style="margin-left: 180px;" id="btn" >Click</button>
+        <button class="btn1" style="margin-left: 180px;" id="btn" >Click</button>
     </div>
    <script>
        $(document).ready(function(){
-           $("button").click(function(){
+        //   
+            
+           $("button").click(function() {
             $('.main div:odd').css('background-color','black')
            $('.main div:even').css('background-color','gray')
            $('#btn').css('background-color','#769656')
            $('#btn').text('CLICK ME')
+           
+           var myclass = $(this).attr('class');
+           alert( "This is my class "+ myclass );
+          
+});
            })
            
 
-       })
+       
        
    </script> 
 </body>
