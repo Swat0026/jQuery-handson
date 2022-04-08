@@ -9,56 +9,36 @@
 </head>
 <body>
     <div class="main" style="margin:auto; width:100%; align-content: center;" >
-        <!-- <select name="" id="dropdown">
-           
-           
-        </select> -->
-        <!-- <input type="text" id="ipbox"> <br> <br> -->
-         <table border="2px" class="tab">
-             <tr id="1" >
-                 <th>Name</th>
-                 <th>Number</th>
-                 <th>City</th>
-             </tr>
-             <tr  id="2">
-                 <td>Rohan</td>
-                 <td>99XXXXXX</td>
-                 <td>Delhi</td>
-             </tr>
-             <tr  id="3">
-                 <td>Sagar</td>
-                 <td>90XXXXXX</td>
-                 <TD>Mumbai</TD>
-             </tr>
-             <tr id="4">
-                 <td>Rishabh</td>
-                 <td>98XXXXXX</td>
-                 <td>Chennai</td>
-             </tr>
-         </table>
-         <br>
-         <br>
+       <input type="checkbox" name="" id="" class="app" value="apple">Apple
+       <input type="checkbox" name="" id="" class="app" value="orange">Orange
+       <input type="checkbox" name="" id="" class="app" value="guava">Guava  
+       <p id="output"></p>
 
 
 
-        <button class="btn1" style="margin-left: 80px;" id="btn" >Delete</button>
+
+        
     </div>
    <script>
-       $(document).ready(function(){
-           $("button").click(function(){
-            //    var opt=$("<option />")
-            //    opt.html($("#ipbox").val());
-            //    $("#dropdown").append(opt);
-            // $(".tab").find("tr:gt(0)").remove();
-            $("#3").remove();
 
-
-              
-           });
+       
         //   
+
             
-          
-           });
+      $(document).ready(function(){
+          var check=function(){  var x=$("input:checked").length;
+          $("#output").text( x + (x === 1 ? " is" : " are") + " checked!")
+        }; 
+        check();
+        $("input[type=checkbox]").click(check)
+        
+
+
+         
+
+          })
+   
+         
            
 
        
