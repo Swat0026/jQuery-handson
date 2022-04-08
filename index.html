@@ -9,19 +9,49 @@
 </head>
 <body>
     <div class="main" style="margin:auto; width:100%; align-content: center;" >
-        <select name="" id="dropdown">
+        <!-- <select name="" id="dropdown">
            
            
-        </select>
-        <input type="text" id="ipbox"> <br> <br>
-        <button class="btn1" style="margin-left: 80px;" id="btn" >ADD</button>
+        </select> -->
+        <!-- <input type="text" id="ipbox"> <br> <br> -->
+         <table border="2px">
+             <tr class="tablerow">
+                 <th>Name</th>
+                 <th>Number</th>
+                 <th>City</th>
+             </tr>
+             <tr class="tablerow">
+                 <td>Rohan</td>
+                 <td>99XXXXXX</td>
+                 <td>Delhi</td>
+             </tr>
+             <tr class="tablerow">
+                 <td>Sagar</td>
+                 <td>90XXXXXX</td>
+                 <TD>Mumbai</TD>
+             </tr>
+             <tr class="tablerow">
+                 <td>Rishabh</td>
+                 <td>98XXXXXX</td>
+                 <td>Chennai</td>
+             </tr>
+         </table>
+         <br>
+         <br>
+
+
+
+        <button class="btn1" style="margin-left: 80px;" id="btn" >Delete</button>
     </div>
    <script>
        $(document).ready(function(){
            $("button").click(function(){
-               var opt=$("<option />")
-               opt.html($("#ipbox").val());
-               $("#dropdown").append(opt);
+            //    var opt=$("<option />")
+            //    opt.html($("#ipbox").val());
+            //    $("#dropdown").append(opt);
+            $(".tablerow").remove()
+
+
               
            });
         //   
